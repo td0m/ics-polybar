@@ -1,0 +1,9 @@
+github.com/ChannelMeter/iso8601duration v0.0.0-20150204201828-8da3af7a2a61 h1:N5Vqww5QISEHsWHOWDEx4PzdIay3Cg0Jp7zItq2ZAro=
+github.com/ChannelMeter/iso8601duration v0.0.0-20150204201828-8da3af7a2a61/go.mod h1:GnKXcK+7DYNy/8w2Ex//Uql4IgfaU82Cd5rWKb7ah00=
+github.com/apognu/gocal v0.5.0 h1:kiohnf1yu0iV+l2gl0fnOdD0ZnRvLcM0DQ1ixSl2mm4=
+github.com/apognu/gocal v0.5.0/go.mod h1:1UqOwBmHJ/oYF7NgorHPNx48sGfzrd748N+RJ7T+qok=
+github.com/arran4/golang-ical v0.0.0-20200125013057-acb7a6972c90/go.mod h1:OvKAaLVUQD5P9ZCgnI5qbpkX8fil6yAnorhTaVZnVWk=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/satori/go.uuid v1.2.0/go.mod h1:dA0hQrYB0VpLJoorglMZABFdXlWrHn1NEOzdhQKdks0=
+github.com/stretchr/testify v1.2.0/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
