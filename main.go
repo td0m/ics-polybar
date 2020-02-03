@@ -15,7 +15,6 @@ func formatDate(date time.Time) string {
 	diff := date.Sub(now)
 	minuteDiff := int(math.Floor(diff.Minutes())) % 60
 	hourDiff := int(math.Floor(diff.Hours()))
-	fmt.Println(now.Format("Mon 2 Jan at 15:04"))
 
 	if diff.Minutes() <= 60 {
 		return fmt.Sprintf("in %d minutes", minuteDiff)
