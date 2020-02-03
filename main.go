@@ -49,8 +49,15 @@ func formatName(summary string) string {
 }
 
 func main() {
+	path := strings.Join(os.Args[1:], " ")
+	if len(path) == 0 {
+		panic("Please provide the path to the config file")
+	}
 	// open the calendar file
-	f, _ := os.Open("./calendar.ics")
+	f, err := os.Open(path)
+	if err != nil {
+		panic("Failed to read config file, located in '" + path + "'")
+	}
 	defer f.Close()
 
 	start, end := time.Now(), time.Now().Add(12*30*24*time.Hour)
