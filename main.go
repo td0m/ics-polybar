@@ -23,11 +23,11 @@ func formatDate(date time.Time) string {
 		return fmt.Sprintf("in %dh %d min", hourDiff, minuteDiff)
 	}
 	formattedHour := date.Format("15:04")
-	if now.YearDay() == date.YearDay() {
-		return fmt.Sprintf("today at %s", formattedHour)
+	if now.YearDay() == date.YearDay() || date.Hour() < now.Hour() {
+		return fmt.Sprintf("at %s", formattedHour)
 	}
 	if now.YearDay()+1 == date.YearDay() {
-		return fmt.Sprintf("tomorrow at %s", formattedHour)
+		return fmt.Sprintf("tmr at %s", formattedHour)
 	}
 	if now.YearDay()+7 >= date.YearDay() {
 		return date.Format("Mon at 15:04")
@@ -44,7 +44,11 @@ func formatName(summary string) string {
 	if len(parts) != 2 {
 		return summary
 	}
-	return strings.TrimSpace(parts[1])
+	trimmed := strings.TrimSpace(parts[1])
+	if strings.Contains(trimmed, "Software Modelling") {
+		return "Software modelling"
+	}
+	return trimmed
 }
 
 func main() {
